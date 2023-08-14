@@ -1,0 +1,8 @@
+import tp.*
+
+program juego {
+	tpIntegrador.jugar()
+}
+
+//HOLA
+// COMPRA WOLLOK

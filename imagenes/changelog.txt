@@ -1,0 +1,3 @@
+Dino Characters changes
+- 2017-10-08
+Added a crouch and a walk animation for it.

@@ -1,0 +1,43 @@
+//import tp.*
+//import puertasYsimilares.*
+//import personaje.*
+//import wollok.game.*
+//import nivel.*
+//
+//describe "Comportamiento de interactuables"{
+//    test "La antorcha se agrega al inventario cuando se interactua con ella"{
+//        const antorchaCelda = new Agarrables(nombre = antorchaCelda)
+//        tpIntegrador.jugar()
+//        antorchaCelda.interactuar()
+//        assert.that(personaje.listaDeObjetos().contains(antorchaCelda))
+//    }
+//    test "Se coloca la antorcha en el soporte y se abre la puerta"{
+//        const puertaCeldaIzq = new PuertaCelda(posicion=game.origin().right(4).up(19),posicionInicio=game.origin().right(4).up(19),nombre="celdaIzq",llevaA=nivelMismo, posicionesQueHabilita=[game.at(5,22),game.at(4,22),game.at(5,19),game.at(4,19)])
+//        const antorchaCelda = new Agarrables(nombre = antorchaCelda)
+//        const estandarteInferior = new Soporte(posicion=game.origin().right(38).up(17),posicionInicio=game.origin().right(38).up(15),queActivo= puertaCeldaIzq,soportoA= antorchaCelda)
+//
+//        personaje.tieneSeleccionado(antorchaCelda)
+//        estandarteInferior.interactuar(antorchaCelda)
+//        personaje.cambiarDireccion(game.at(5,19))
+//        assert.that(personaje.position()==game.at(5,19))
+//    }
+//    test "Se le da agua al monstruo y el mismo entrega una tabla de madera"{
+//        botellaAgua.estaLleno()
+//        personajeAgua.interactuar()
+//        assert.equals(game.origin().right(8).up(24),tablaDeMadera.position())
+//    }
+//    test "La pieza de ajedrez se coloca en la posicion correcta lo que permite interactuar con el cartel y abrir la puerta"{
+//        const puertaFinal = new Puerta(llevaA=nivelMismo,nombre="puertaFinal",posicionInicio=game.at(34,33),posicion=game.at(34,35))
+//        const botonBeti = new Boton(posicion=game.at(24,9),posicionInicio=game.at(23,9),sirvePara=puertaFinal)
+//        peonb3.estaEnPosicion()
+//        botonBeti.interactuar()
+//        assert.that(puertaFinal.estaAbierta())
+//    }
+//    test "Si se tiene seleccionada la tabla de madera se puede colocar en el puente"{
+//        personaje.tieneSeleccionado(tablaDeMadera)
+//        placaTres.interactuar()
+//        personaje.cambiarDireccion(tablaDeMadera.position())
+//        assert.that(personaje.position()==tablaDeMadera.position())
+//    }
+////    test "Si se colocan las tuberías de forma correcta se puede usar la llave de paso"{}
+//}

@@ -1,0 +1,40 @@
+import tp.*
+import puertasYsimilares.*
+import personaje.*
+import wollok.game.*
+import nivel.*
+
+//describe "Posiciones Objetos Escenario 1"{
+//test "La celda izquierda esta cerrada y en su posicion" {
+//		const puertaCeldaIzq_cerrada = new Puerta(posicion=game.origin().up(19).right(4),nombre="celdaIzq_cerrada",llevaA=nivelMismo)
+//		assert.equals((4,19), puertaCeldaIzq_cerrada.position())
+//}
+//}
+
+describe "El personaje puede moverse a sus anchas"{
+	test "Se mueve a la izquierda desde su posicion"{
+		personaje.mover(izquierda)
+		assert.equals(game.at(25,27),personaje.position())
+	}
+	test "Se mueve a la derecha desde su posicion"{
+		personaje.mover(derecha)
+		assert.equals(game.at(27,27),personaje.position())
+	}
+	test "Se mueve abajo desde su posicion"{
+		personaje.mover(abajo)
+		personaje.mover(abajo)
+		personaje.mover(abajo)
+		assert.equals(game.at(26,24),personaje.position())
+	}
+	test "Se mueve arriba desde su posicion"{
+		personaje.mover(arriba)
+		personaje.mover(arriba)
+		personaje.mover(arriba)
+		assert.equals(game.at(26,30),personaje.position())
+	}
+	test "Se le puede cambiar la posicion manualmente sin que afecte su movibilidad"{
+		personaje.cambiarPosicionManual(15,16)
+		personaje.mover(arriba)
+		assert.equals(game.at(15,17),personaje.position())
+	}
+}
