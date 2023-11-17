@@ -1,1 +1,1 @@
-# wollok_game_minerva
+#  Wollok Game
