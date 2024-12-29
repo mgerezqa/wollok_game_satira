@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: navesEspaciales
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: mini-tps-objetos;singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: com.ibm.icu,
+ org.eclipse.xtext,
+ org.eclipse.xtext.generator,
+ org.eclipse.xtend,
+ org.eclipse.xtend.typesystem.emf,
+ org.eclipse.xpand,
+ org.uqbar.project.wollok,
+ org.uqbar.project.wollok.launch,
+ org.uqbar.project.wollok.lib,
+ org.eclipse.xtext.ui
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
